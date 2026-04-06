@@ -453,13 +453,47 @@ h2 {
   transform: scale(1.05);
 }
 
-/* ===================== */
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 40px 24px;
-  color: #9ca3af;
-  border-top: 1px solid rgba(255,255,255,0.1);
+/* Footer geral */
+.footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Container das redes sociais */
+.footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Ícones */
+.footer .social-icons a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+/* Hover moderno */
+.footer .social-icons a:hover img {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+    .footer .social-icons {
+        gap: 15px;
+    }
+    .footer .social-icons a img {
+        width: 25px;
+        height: 25px;
+    }
 }
 
 
